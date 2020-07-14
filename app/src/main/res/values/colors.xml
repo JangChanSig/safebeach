@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#5694C0</color> <!--5694C0-->
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorMain">#254f6e</color>
+    <color name="colorSub">#00A9DE</color>
+
+    <color name="colorTitle">#FFFFFF</color>
+
+    <color name="incheon">#80c269</color>
+    <color name="kunggi">#0051b4</color>
+    <color name="gangwon">#c7dd3a</color>
+    <color name="choongbook">#c195d4</color>
+    <color name="choongnam">#fdc100</color>
+    <color name="junbook">#008830</color>
+    <color name="junnam">#ff9900</color>
+    <color name="kungbook">#ffd300</color>
+    <color name="kungnam">#e30a25</color>
+    <color name="pohang">#00a0e9</color>
+    <color name="busan">#f19ec2</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="good">#2CE056</color>
+    <color name="bad">#d42424</color>
+    <color name="normal">#ffd300</color>
+    <color name="empty">#C1C1C1</color>
+
+    <color name="intro">#5163b7</color>
+</resources>

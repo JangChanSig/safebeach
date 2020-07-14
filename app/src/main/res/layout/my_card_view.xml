@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myCardView"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:foreground= "?attr/selectableItemBackground"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2c4151"
+        android:weightSum="11">
+    <ImageView
+        android:id="@+id/card_image_d2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:src="@drawable/sample"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="6dp"
+        android:weightSum="5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ref_card_text2"
+                android:text="선창횟집"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/title_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/ref_card_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="매운탕도 깔끔하다"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#00A9DE"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ref_card_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="부산시 배운대구 배운대로 1길"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:textColor="#96a0a8"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/card_text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="✆ 000-000-0000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/normal"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="4dp"
+            android:textSize="15sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="app_version">ver 1.2.2</string>
+
+    <string name="app_name">beachalarm</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!--pce-->
+    <string name="toolbar_title_d1">해수욕장 위치 검색</string>
+    <string name="incheon">인천</string>
+    <string name="gangwon">강원도</string>
+    <string name="kunggi">경기도</string>
+    <string name="junnam">전라남도</string>
+    <string name="junbook">전라북도</string>
+    <string name="kungbook">경상북도</string>
+    <string name="kungnam">경상남도</string>
+    <string name="choongbook">충청북도</string>
+    <string name="choongnam">충청남도</string>
+    <string name="busan">부산</string>
+    <string name="ulsan">울산</string>
+    <string name="title_activity_seceond">seceondActivity</string>
+
+    <!--    <string name="server_url">http://db.intuseer.com</string>-->
+    <string name="server_url">http://main.intuseer.com:30000</string>
+<!--    <string name="server_url">http://main.intuseer.com:3008</string>-->
+    <string name="error_server_not_working">Connection failure due to network error</string>
+
+
+    <string name="intuseer_url">http://www.intuseer.co.kr/</string>
+    <string name="norajuku_url">https://www.dancheongcc.com/</string>
+    <string name="intuseer_url_text">인투시어 홈페이지로 연결 됩니다.</string>
+    <string name="norajuku_url_text">노라주쿠 홈페이지로 연결 됩니다.</string>
+</resources>

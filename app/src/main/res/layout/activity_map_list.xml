@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MapListActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/tb_title_d1"
+            android:text="@string/toolbar_title_d1"
+            android:layout_centerInParent="true"
+            style="@style/title_text_style" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/back_btn"
+            android:src="@drawable/backicon"
+            android:layout_marginLeft="@dimen/appside_padding"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/mMap"
+        android:layout_marginLeft="@dimen/appside_padding"
+        android:layout_marginRight="@dimen/appside_padding"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/appside_half_padding"
+        android:layout_weight="1"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/recv_card"
+        android:layout_marginTop="@dimen/appside_half_padding"
+        android:layout_marginLeft="@dimen/appside_padding"
+        android:layout_marginRight="@dimen/appside_padding"
+        android:layout_marginBottom="@dimen/appside_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="appside_padding">16dp</dimen>
+
+    <dimen name="appside_halfhalf_padding">4dp</dimen>
+    <dimen name="appside_half_padding">8dp</dimen>
+    <dimen name="title_text">20sp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="buttonside_margin">5dp</dimen>
+    <dimen name="contentSzie">30dp</dimen>
+</resources>
