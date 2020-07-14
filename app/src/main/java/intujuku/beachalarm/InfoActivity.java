@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ import java.util.List;
 import intujuku.beachalarm.ListItem.myD2ListItem;
 import intujuku.beachalarm.ListItem.referenceAdapter;
 import intujuku.beachalarm.ListItem.referenceItem;
+import intujuku.beachalarm.BuildConfig;
 
 public class InfoActivity extends AppCompatActivity {
 
@@ -25,6 +27,7 @@ public class InfoActivity extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private List<referenceItem> reListItems;
+    private TextView versionCode;
 
     ImageView img_intusser, img_norajuku;
     private String linkUrl;
@@ -48,6 +51,8 @@ public class InfoActivity extends AppCompatActivity {
                 linkConnect(getString(R.string.norajuku_url), getString(R.string.norajuku_url_text));
             }
         });
+        versionCode = findViewById(R.id.versionCode);
+        versionCode.setText(BuildConfig.VERSION_NAME);
 
         initMyListItems();
         mRecyclerView = (RecyclerView) findViewById(R.id.ref_rec);

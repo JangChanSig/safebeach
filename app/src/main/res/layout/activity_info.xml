@@ -26,10 +26,11 @@
                 android:textStyle="bold"
                 android:textColor="@color/white"></TextView>
             <TextView
+                android:id="@+id/versionCode"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:text="@string/app_version"
+                android:text="0.0"
                 android:layout_marginLeft="8dp"
                 android:textSize="18sp"
                 android:textColor="@color/white"></TextView>
