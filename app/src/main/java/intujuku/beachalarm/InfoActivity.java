@@ -23,6 +23,7 @@ import intujuku.beachalarm.BuildConfig;
 
 public class InfoActivity extends AppCompatActivity {
 
+    private ImageView back_btn;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -52,7 +53,7 @@ public class InfoActivity extends AppCompatActivity {
             }
         });
         versionCode = findViewById(R.id.versionCode);
-        versionCode.setText(BuildConfig.VERSION_NAME); 
+        versionCode.setText(BuildConfig.VERSION_NAME);
 
         initMyListItems();
         mRecyclerView = (RecyclerView) findViewById(R.id.ref_rec);
@@ -62,6 +63,13 @@ public class InfoActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.invalidate();
 
+        back_btn = findViewById(R.id.back_btn);
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
     public void linkConnect(String url, String title){

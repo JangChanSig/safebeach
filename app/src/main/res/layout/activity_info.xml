@@ -7,14 +7,44 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".InfoActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tb_title_d1"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="안전한 휴가"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="@dimen/title_text"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"></TextView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/back_btn"
+                android:src="@drawable/backicon"
+                android:layout_marginLeft="@dimen/appside_padding"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="@dimen/appside_padding"
             android:layout_marginLeft="@dimen/appside_padding"
             android:orientation="horizontal">
             <TextView
@@ -26,13 +56,21 @@
                 android:textStyle="bold"
                 android:textColor="@color/white"></TextView>
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="ver"
+                android:layout_marginLeft="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"></TextView>
+            <TextView
                 android:id="@+id/versionCode"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:text="0.0"
-                android:layout_marginLeft="8dp"
-                android:textSize="18sp"
+                android:layout_marginLeft="3dp"
+                android:textSize="20sp"
                 android:textColor="@color/white"></TextView>
         </LinearLayout>
         <LinearLayout

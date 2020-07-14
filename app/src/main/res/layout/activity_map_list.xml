@@ -16,6 +16,7 @@
         <TextView
             android:id="@+id/tb_title_d1"
             android:text="@string/toolbar_title_d1"
+            android:textSize="@dimen/title_text"
             android:layout_centerInParent="true"
             style="@style/title_text_style" />
         <ImageView

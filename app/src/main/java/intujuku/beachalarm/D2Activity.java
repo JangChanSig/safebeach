@@ -45,6 +45,22 @@ public class D2Activity extends AppCompatActivity {
 
     Activity d2Activity = this;
     int beachId;
+    public abstract class OnClickListenerRefresh implements View.OnClickListener
+    {
+        protected ImageView cctv_img;
+        protected String cctvid;
+        protected int beachstate;
+        protected TextView condition_text;
+        protected TextView cctv_text;
+        public OnClickListenerRefresh(ImageView cctv_img, String cctvid,int beachstate,TextView condition_text,TextView cctv_text)
+        {
+            this.cctv_img = cctv_img;
+            this.cctvid = cctvid;
+            this.beachstate = beachstate;
+            this.condition_text = condition_text;
+            this.cctv_text = cctv_text;
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,13 +95,15 @@ public class D2Activity extends AppCompatActivity {
 
         infoUpdate(cctv_img,cctvid,beachstate,condition_text,cctv_text);
 
-        refresh.setOnClickListener(new Button.OnClickListener() {
+        refresh.setOnClickListener(new OnClickListenerRefresh(cctv_img,cctvid,beachstate,condition_text,cctv_text) {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(d2Activity,D2Activity.class);
+
+                infoUpdate(cctv_img,cctvid,beachstate,condition_text,cctv_text);
+                //Intent intent = new Intent(d2Activity,D2Activity.class);
                 // 서버에서 신로등정보 및 cctv정보 다시 가져와서 업데이트.
                 // TODO : click event
-                requestMessageProcess();
+                //requestMessageProcess();
                 //update();
             }
         });
@@ -100,8 +118,7 @@ public class D2Activity extends AppCompatActivity {
 
     public void infoUpdate(ImageView cctv_img, String cctvid,int beachstate,TextView condition_text,TextView cctv_text)
     {
-
-        if(cctvid!=null && cctvid != "-")
+        if(cctvid!=null && !cctvid.equals("-"))
         {
             cctv_img.setVisibility(View.VISIBLE);
             Glide.with(this).load("http://220.95.232.18/camera/"+cctvid+".jpg?"+System.currentTimeMillis())
