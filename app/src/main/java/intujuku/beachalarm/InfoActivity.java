@@ -52,7 +52,7 @@ public class InfoActivity extends AppCompatActivity {
             }
         });
         versionCode = findViewById(R.id.versionCode);
-        versionCode.setText(BuildConfig.VERSION_NAME);
+        versionCode.setText(BuildConfig.VERSION_NAME); 
 
         initMyListItems();
         mRecyclerView = (RecyclerView) findViewById(R.id.ref_rec);
